@@ -36,19 +36,19 @@ public class Contact extends AbstractEntity {
         return firstName + " " + lastName;
     }
 
-    public String getFirstName() {
+    public String getfirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    public void setfirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    public String getlastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public void setlastName(String lastName) {
         this.lastName = lastName;
     }
 

@@ -1,61 +1,73 @@
-# Flow CRM Tutorial
+```markdown
+# My Project CRM Tutorial
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+Este projeto serve como ponto de partida para criar sua própria aplicação Vaadin com Spring Boot. Ele contém todas as configurações necessárias e alguns arquivos de espaço reservado para ajudá-lo a começar.
 
-## Running the application
+## Executando a Aplicação
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+O projeto é um projeto Maven padrão. Para executá-lo a partir da linha de comando, digite o seguinte comando:
 
-You can also import the project to your IDE of choice as you would with any
-Maven project. Read more on [how to import Vaadin projects to different IDEs](https://vaadin.com/docs/latest/guide/step-by-step/importing) (Eclipse, IntelliJ IDEA, NetBeans, and VS Code).
-
-## Deploying to Production
-
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
-
-Once the JAR file is built, you can run it using
-`java -jar target/flowcrmtutorial-1.0-SNAPSHOT.jar`
-
-## Project structure
-
-- `MainLayout.java` in `src/main/java` contains the navigation setup (i.e., the
-  side/top bar and the main menu). This setup uses
-  [App Layout](https://vaadin.com/docs/components/app-layout).
-- `views` package in `src/main/java` contains the server-side Java views of your application.
-- `views` folder in `frontend/` contains the client-side JavaScript views of your application.
-- `themes` folder in `frontend/` contains the custom CSS styles.
-
-## Useful links
-
-- Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
-- Follow the tutorial at [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
-- Create new projects at [start.vaadin.com](https://start.vaadin.com/).
-- Search UI components and their usage examples at [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
-- View use case applications that demonstrate Vaadin capabilities at [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
-- Build any UI without custom CSS by discovering Vaadin's set of [CSS utility classes](https://vaadin.com/docs/styling/lumo/utility-classes). 
-- Find a collection of solutions to common use cases at [cookbook.vaadin.com](https://cookbook.vaadin.com/).
-- Find add-ons at [vaadin.com/directory](https://vaadin.com/directory).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin).
-
-
-## Deploying using Docker
-
-To build the Dockerized version of the project, run
-
+```bash
+mvnw # (Windows)
+./mvnw # (Mac & Linux)
 ```
+
+Em seguida, abra http://localhost:8080 em seu navegador.
+
+Você também pode importar o projeto para sua IDE de escolha como faria com qualquer projeto Maven. Saiba mais sobre como importar projetos Vaadin em diferentes IDEs (Eclipse, IntelliJ IDEA, NetBeans e VS Code).
+
+## Implantando em Produção
+
+Para criar uma versão de produção, chame:
+
+```bash
+mvnw clean package -Pproduction # (Windows)
+./mvnw clean package -Pproduction # (Mac & Linux)
+```
+
+Isso criará um arquivo JAR com todas as dependências e recursos front-end, pronto para ser implantado. O arquivo pode ser encontrado na pasta `target` após a conclusão da construção.
+
+Uma vez que o arquivo JAR é construído, você pode executá-lo usando:
+
+```bash
+java -jar target/flowcrmtutorial-1.0-SNAPSHOT.jar
+```
+
+## Estrutura do Projeto
+
+- `MainLayout.java` em `src/main/java` contém a configuração de navegação (barra lateral/superior e menu principal), utilizando o App Layout.
+- O pacote `views` em `src/main/java` contém as visões Java do lado do servidor da aplicação.
+- A pasta `views` em `frontend/` contém as visões de JavaScript do lado do cliente.
+- A pasta `themes` em `frontend/` contém os estilos CSS personalizados.
+
+## Links Úteis
+
+- Leia a [documentação](https://vaadin.com/docs).
+- Siga o [tutorial](https://vaadin.com/docs/latest/tutorial/overview).
+- Crie novos projetos em [start.vaadin.com](https://start.vaadin.com/).
+- Pesquise componentes de UI e seus exemplos de uso em [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
+- Veja aplicações de casos de uso em [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
+- Construa UIs sem CSS personalizado com [conjunto de classes de utilidade CSS do Vaadin](https://vaadin.com/docs/latest/directory).
+- Encontre soluções para casos de uso comuns em [cookbook.vaadin.com](https://cookbook.vaadin.com/).
+- Encontre complementos em [vaadin.com/directory](https://vaadin.com/directory).
+- Faça perguntas no [Stack Overflow](https://stackoverflow.com/) ou junte-se ao nosso canal [Discord](https://discord.com/invite/vaadin).
+- Relate problemas, crie pull requests no [GitHub](https://github.com/vaadin/flow-crud).
+
+## Implantação usando Docker
+
+Para construir a versão Dockerizada do projeto, execute:
+
+```bash
 mvn clean package -Pproduction
 docker build . -t flowcrmtutorial:latest
 ```
 
-Once the Docker image is correctly built, you can test it locally using
+Depois que a imagem Docker for construída corretamente, você pode testá-la localmente usando:
 
-```
+```bash
 docker run -p 8080:8080 flowcrmtutorial:latest
+```
+
+---
+**Observação:** Certifique-se de substituir "images/update_icon.png" pelo caminho correto para a imagem no seu projeto.
 ```
