@@ -1,7 +1,6 @@
-```markdown
-# My Project CRM Tutorial
+# 🚀 My Project CRM Tutorial
 
-## Algumas imagens do sistema:
+## 🖼️ Algumas imagens do sistema:
 
 ![Imagem 1](https://i.imgur.com/gaDM794.png)
 ![Imagem 2](https://i.imgur.com/0vGSsXW.png)
@@ -11,8 +10,7 @@
 ![Imagem 6](https://i.imgur.com/UqnSC9j.png)
 ![Imagem 7](https://i.imgur.com/4OG6FIA.png)
 
-
-## Executando a Aplicação
+## 🏃‍♂️ Executando a Aplicação
 
 O projeto é um projeto Maven padrão. Para executá-lo a partir da linha de comando, digite o seguinte comando:
 
@@ -25,7 +23,7 @@ Em seguida, abra http://localhost:8080 em seu navegador.
 
 Você também pode importar o projeto para sua IDE de escolha como faria com qualquer projeto Maven. Saiba mais sobre como importar projetos Vaadin em diferentes IDEs (Eclipse, IntelliJ IDEA, NetBeans e VS Code).
 
-## Implantando em Produção
+## 🚀 Implantando em Produção
 
 Para criar uma versão de produção, chame:
 
@@ -42,14 +40,14 @@ Uma vez que o arquivo JAR é construído, você pode executá-lo usando:
 java -jar target/flowcrmtutorial-1.0-SNAPSHOT.jar
 ```
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 - `MainLayout.java` em `src/main/java` contém a configuração de navegação (barra lateral/superior e menu principal), utilizando o App Layout.
 - O pacote `views` em `src/main/java` contém as visões Java do lado do servidor da aplicação.
 - A pasta `views` em `frontend/` contém as visões de JavaScript do lado do cliente.
 - A pasta `themes` em `frontend/` contém os estilos CSS personalizados.
 
-## Links Úteis
+## 🔗 Links Úteis
 
 - Leia a [documentação](https://vaadin.com/docs).
 - Siga o [tutorial](https://vaadin.com/docs/latest/tutorial/overview).
@@ -62,7 +60,7 @@ java -jar target/flowcrmtutorial-1.0-SNAPSHOT.jar
 - Faça perguntas no [Stack Overflow](https://stackoverflow.com/) ou junte-se ao nosso canal [Discord](https://discord.com/invite/vaadin).
 - Relate problemas, crie pull requests no [GitHub](https://github.com/vaadin/flow-crud).
 
-## Implantação usando Docker
+## 🐳 Implantação usando Docker
 
 Para construir a versão Dockerizada do projeto, execute:
 
@@ -78,5 +76,3 @@ docker run -p 8080:8080 flowcrmtutorial:latest
 ```
 
 ---
-**Observação:** Certifique-se de substituir "images/update_icon.png" pelo caminho correto para a imagem no seu projeto.
-```
